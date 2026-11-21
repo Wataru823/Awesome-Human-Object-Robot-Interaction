@@ -8,7 +8,7 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-**86 papers** · **21 datasets** · **13 tools** · last updated 2026-11-21
+**90 papers** · **21 datasets** · **13 tools** · last updated 2026-11-21
 
 </div>
 
@@ -26,9 +26,9 @@ Most robots still learn from robot demonstrations. People are a much richer sour
 1. [What is HORI?](#1-what-is-hori)
 2. [How to use this list](#2-how-to-use-this-list)
 3. [Surveys and big pictures](#3-surveys-and-big-pictures) (12)
-4. [Understanding human-object interaction](#4-understanding-human-object-interaction) (9)
+4. [Understanding human-object interaction](#4-understanding-human-object-interaction) (11)
 5. [Affordance and object function](#5-affordance-and-object-function) (16)
-6. [From human demonstration to robot skill](#6-from-human-demonstration-to-robot-skill) (14)
+6. [From human demonstration to robot skill](#6-from-human-demonstration-to-robot-skill) (16)
 7. [Policies that act on objects](#7-policies-that-act-on-objects) (15)
 8. [Grasping and dexterous manipulation](#8-grasping-and-dexterous-manipulation) (6)
 9. [Datasets and benchmarks](#9-datasets-and-benchmarks) (21)
@@ -78,7 +78,9 @@ The object is always in the middle. That is what makes HORI different from plain
 
 Every entry looks like this:
 
-> - **[Paper title](link)** — *Venue Year* — one line on why it matters. [`code`](link) [`project`](link)
+```
+- **[Paper title](https://arxiv.org/abs/XXXX.XXXXX)** — *Venue Year* — one line on why it matters. [`code`](https://github.com/...) [`project`](https://...)
+```
 
 | Part | Meaning |
 | :--- | :--- |
@@ -88,6 +90,8 @@ Every entry looks like this:
 | **`code` / `project` / `video`** | Links from the authors, checked by hand. Not every paper has one. |
 
 **Order.** Inside each section, newer papers come first.
+
+**How entries are checked.** Paper metadata is matched against arXiv, Crossref, and the PMLR (CoRL) and RSS proceedings indexes. The label shows the peer-reviewed venue when we can confirm one; `arXiv` means we could not. Code, project, and video links are opened by hand before they are added, and a GitHub Action re-checks every link each week.
 
 **Reading paths.** You do not need to read everything. Pick the row that matches you.
 
@@ -130,10 +134,12 @@ Every entry looks like this:
 - **[Grasping the Future: Joint 3D Hand-Object Forecasting From Internet Videos](https://arxiv.org/abs/2611.12879)** — *arXiv 2026* — Predicts future hand and object states from ordinary web videos.
 - **[HOI-Retarget: Contact-Centric Retargeting for Human-Object Interaction](https://arxiv.org/abs/2609.34674)** — *arXiv 2026* — Retargets human-object contact to a robot instead of copying joint angles. [`code`](https://github.com/leggedrobotics/hoi-retarget) [`project`](http://shinben0327.github.io/hoi-retarget) [`video`](https://www.youtube.com/watch?v=7J-2QV3piIk)
 - **[Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions](https://arxiv.org/abs/2609.16683)** — *arXiv 2026* — Whole-body tasks where walking and handling an object must be learned together. [`code`](https://github.com/xiaohu-art/Weave) [`project`](https://xiaohu-art.github.io/Weave/)
-- **[QPIC: Query-Based Pairwise Human-Object Interaction Detection with Image-Wide Contextual Information](https://arxiv.org/abs/2103.05399)** — *CVPR 2021* — Pairwise queries with image-wide context. A standard HOI baseline.
-- **[HOTR: End-to-End Human-Object Interaction Detection with Transformers](https://arxiv.org/abs/2104.13682)** — *CVPR 2021* — Set prediction for HOI, so no hand-written post-processing is needed.
-- **[Understanding Human Hands in Contact at Internet Scale](https://arxiv.org/abs/2006.06669)** — *CVPR 2020* — Defines the 100DOH benchmark: where and how hands touch objects.
-- **[Learning joint reconstruction of hands and manipulated objects](https://arxiv.org/abs/1904.05767)** — *CVPR 2019* — Recovers hand pose and object shape together. Core for reasoning about contact.
+- **[QPIC: Query-Based Pairwise Human-Object Interaction Detection with Image-Wide Contextual Information](https://arxiv.org/abs/2103.05399)** — *CVPR 2021* — Pairwise queries with image-wide context. A standard HOI baseline. [`code`](https://github.com/hitachi-rd-cv/qpic)
+- **[HOTR: End-to-End Human-Object Interaction Detection with Transformers](https://arxiv.org/abs/2104.13682)** — *CVPR 2021* — Set prediction for HOI, so no hand-written post-processing is needed. [`code`](https://github.com/kakaobrain/hotr)
+- **[Understanding Human Hands in Contact at Internet Scale](https://arxiv.org/abs/2006.06669)** — *CVPR 2020* — Defines the 100DOH benchmark: where and how hands touch objects. [`code`](https://github.com/ddshan/hand_object_detector)
+- **[Learning joint reconstruction of hands and manipulated objects](https://arxiv.org/abs/1904.05767)** — *CVPR 2019* — Recovers hand pose and object shape together. Core for reasoning about contact. [`code`](https://github.com/hassony2/obman_train)
+- **[No-Frills Human-Object Interaction Detection: Factorization, Layout Encodings, and Training Techniques](https://arxiv.org/abs/1811.05967)** — *ICCV 2019* — Shows that a simple instance-centric design can beat complex pipelines.
+- **[Learning to Detect Human-Object Interactions](https://arxiv.org/abs/1702.05448)** — *WACV 2018* — Early deep HOI detection. Good for learning the task setup.
 
 ---
 
@@ -148,10 +154,10 @@ Every entry looks like this:
 - **[AffordSim: A Scalable Data Generator and Benchmark for Affordance-Aware Robotic Manipulation](https://arxiv.org/abs/2604.11674)** — *arXiv 2026* — Generates affordance training data at scale, with a benchmark to compare on.
 - **[Learning Granularity-Aware Affordances from Human-Object Interaction for Tool-Based Functional Dexterous Grasping](https://arxiv.org/abs/2407.00614)** — *TNNLS 2025* — Tool use needs grasps chosen for the tool's function, not just stability. [`code`](https://github.com/yangfan293/GAAF-DEX)
 - **[Robo-ABC: Affordance Generalization Beyond Categories via Semantic Correspondence for Robot Manipulation](https://arxiv.org/abs/2405.19277)** — *ECCV 2024* — Transfers 'where a human hand touches' to 'where a robot should touch'. [`code`](https://github.com/TEA-Lab/Robo-ABC)
-- **[RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation](https://arxiv.org/abs/2407.04689)** — *CoRL 2024* — Zero-shot manipulation by retrieving similar human-object contacts.
+- **[RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation](https://arxiv.org/abs/2407.04689)** — *CoRL 2024* — Zero-shot manipulation by retrieving similar human-object contacts. [`code`](https://github.com/yxKryptonite/RAM_code)
 - **[AffordanceLLM: Grounding Affordance from Vision Language Models](https://arxiv.org/abs/2401.06341)** — *CVPR 2024* — Uses world knowledge inside a VLM to locate affordance regions. [`code`](https://github.com/JasonQSY/AffordanceLLM)
 - **[LASO: Language-Guided Affordance Segmentation on 3D Object](https://doi.org/10.1109/cvpr52733.2024.01351)** — *CVPR 2024* — Language-guided 3D affordance segmentation. Useful for instruction-driven tasks.
-- **[SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes](https://doi.org/10.1109/cvpr52733.2024.01377)** — *CVPR 2024* — Affordance in full 3D scenes, not on single isolated objects.
+- **[SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes](https://doi.org/10.1109/cvpr52733.2024.01377)** — *CVPR 2024* — Affordance in full 3D scenes, not on single isolated objects. [`code`](https://github.com/SceneFun3D/scenefun3d)
 - **[Grounding 3D Object Affordance from 2D Interactions in Images](https://arxiv.org/abs/2303.10437)** — *ICCV 2023* — Learns 3D affordance from cheap 2D human-object images.
 - **[VAT-Mart: Learning Visual Action Trajectory Proposals for Manipulating 3D Articulated Objects](https://arxiv.org/abs/2106.14440)** — *ICLR 2022* — Builds value maps over affordance space and closes the loop on real objects. [`code`](https://github.com/warshallrho/VAT-Mart)
 - **[3D AffordanceNet: A Benchmark for Visual Object Affordance Understanding](https://arxiv.org/abs/2103.16397)** — *CVPR 2021* — Benchmark plus baseline for affordance on 3D point clouds.
@@ -176,8 +182,10 @@ Every entry looks like this:
 - **[SAKI: Skill Assembly and Kinematic Imitation from Human Videos for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2609.36031)** — *arXiv 2026* — Long tasks: split a human video into skills, then replay them on a mobile robot.
 - **[EgoMimic: Scaling Imitation Learning via Egocentric Video](https://arxiv.org/abs/2410.24221)** — *ICRA 2025* — One egocentric human stream plus robot data gives strong scaling results. [`code`](https://github.com/SimarKareer/EgoMimic)
 - **[DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies](https://arxiv.org/abs/2505.07813)** — *RSS 2025* — Turns in-the-wild human hand data into dexterous robot policies. [`code`](https://github.com/dexwild/dexwild) [`project`](https://dexwild.github.io) [`video`](https://www.youtube.com/watch?v=oMaamSkcl5E)
+- **[Visual Imitation Enables Contextual Humanoid Control](https://arxiv.org/abs/2505.03729)** — *CoRL 2025* — Reconstructs human and robot motion from ordinary video (VideoMimic). [`code`](https://github.com/hongsukchoi/VideoMimic) [`project`](https://www.videomimic.net/)
 - **[HumanPlus: Humanoid Shadowing and Imitation from Humans](https://arxiv.org/abs/2406.10454)** — *CoRL 2024* — A full human-to-humanoid pipeline: hardware, data, and policy. [`code`](https://github.com/MarkFzp/humanplus) [`project`](https://humanoid-ai.github.io/) [`video`](https://www.youtube.com/watch?v=6r4ZxpJjdx8)
 - **[R3M: A Universal Visual Representation for Robot Manipulation](https://arxiv.org/abs/2203.12601)** — *CoRL 2022* — Pretrained visual representations that transfer well to manipulation. [`code`](https://github.com/facebookresearch/r3m)
+- **[Human-to-Robot Imitation in the Wild](https://arxiv.org/abs/2207.09450)** — *RSS 2022* — Learns from human play data with no robot demonstrations (WHIRL). [`project`](https://human2robot.github.io) [`video`](https://www.youtube.com/watch?v=bBWyk1e6maY)
 
 ---
 
@@ -189,8 +197,8 @@ Every entry looks like this:
 - **[Open X-Embodiment: Robotic Learning Datasets and RT-X Models](https://arxiv.org/abs/2310.08864)** — *ICRA 2024* — Many labs pool robot data; cross-robot transfer becomes possible. [`code`](https://github.com/google-deepmind/open_x_embodiment) [`project`](https://robotics-transformer-x.github.io)
 - **[Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213)** — *RSS 2024* — An open, reusable generalist policy you can fine-tune yourself. [`code`](https://github.com/octo-models/octo) [`project`](https://octo-models.github.io) [`video`](https://www.youtube.com/watch?v=99667VDGWMg)
 - **[OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)** — *CoRL 2024* — Open weights for a VLA. Good starting point for your own experiments. [`code`](https://github.com/openvla/openvla) [`project`](https://openvla.github.io/) [`video`](https://www.youtube.com/watch?v=SIcPxapIgBI)
-- **[3D Diffuser Actor: Policy Diffusion with 3D Scene Representations](https://arxiv.org/abs/2402.10885)** — *CoRL 2024* — Diffusion policy with 3D scene features improves spatial precision.
-- **[RT-1: Robotics Transformer for Real-World Control at Scale](https://arxiv.org/abs/2212.06817)** — *RSS 2023* — Shows a transformer can act across many real tasks from images.
+- **[3D Diffuser Actor: Policy Diffusion with 3D Scene Representations](https://arxiv.org/abs/2402.10885)** — *CoRL 2024* — Diffusion policy with 3D scene features improves spatial precision. [`code`](https://github.com/nickgkan/3d_diffuser_actor)
+- **[RT-1: Robotics Transformer for Real-World Control at Scale](https://arxiv.org/abs/2212.06817)** — *RSS 2023* — Shows a transformer can act across many real tasks from images. [`code`](https://github.com/google-research/robotics_transformer)
 - **[RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](https://arxiv.org/abs/2307.15818)** — *CoRL 2023* — Vision-language pretraining transfers to robot actions. [`project`](https://robotics-transformer.github.io/)
 - **[Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](https://arxiv.org/abs/2304.13705)** — *RSS 2023* — ALOHA + ACT. Cheap hardware made bimanual imitation practical. [`code`](https://github.com/tonyzhaozh/act)
 - **[Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137)** — *RSS 2023* — Treats action sequences as a diffusion problem. Strong and simple baseline. [`code`](https://github.com/real-stanford/diffusion_policy)
@@ -337,7 +345,12 @@ These are the questions this list cannot answer yet. They are also good thesis t
 
 - [CoRL proceedings](https://www.robot-learning.org/) and [PMLR](https://proceedings.mlr.press/) are open access. Most robotics papers appear there first.
 - [arXiv cs.RO](https://arxiv.org/list/cs.RO/recent) and [arXiv cs.CV](https://arxiv.org/list/cs.CV/recent) carry almost everything before review.
-- [Paper lists on awesome-hri-datasets](https://github.com/mjyc/awesome-hri-datasets) for datasets beyond this list.
+**Related lists**
+
+- [awesome-human-robot-interaction](https://github.com/Po-Jen/awesome-human-robot-interaction) - HRI libraries and resources.
+- [awesome-hri-datasets](https://github.com/mjyc/awesome-hri-datasets) - datasets beyond this list.
+- [awesome-human-object-interaction](https://github.com/chinancheng/awesome-human-object-interaction) - HOI detection papers.
+- [awesome-LLM-for-social-HRI](https://github.com/HaaaO/awesome-LLM-for-social-HRI) - LLMs in social HRI.
 
 ---
 
