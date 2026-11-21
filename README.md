@@ -93,7 +93,7 @@ Every entry looks like this:
 
 | You are... | Read these first | Then |
 | :--- | :--- | :--- |
-| **New to the area** | Affordances in Robotic Tasks (survey), Human-Robot Interaction: An Introduction (book), [Glossary](#16-glossary) | Everything in section 3 |
+| **New to the area** | Building Affordance Relations (survey), Human-Robot Interaction: An Introduction (book), [Glossary](#16-glossary) | Everything in section 3 |
 | **A vision person** | HOI detection basics (section 4), then section 5 on affordance | Section 6: how vision output becomes robot action |
 | **A robotics person** | Section 6 (human → robot), section 7 (policies) | Section 5 (affordance), section 9 (datasets) |
 | **An HRI person** | Sections 11 and 12, then the HORI table in section 1 | Section 5: what the robot actually perceives |
@@ -115,7 +115,7 @@ Every entry looks like this:
 - **[Robotic Manipulation via Imitation Learning: Taxonomy, Evolution, Benchmark, and Challenges](https://arxiv.org/abs/2508.17449)** — *arXiv 2025* — Sorts imitation learning methods into a taxonomy you can actually navigate.
 - **[Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications](https://arxiv.org/abs/2510.07077)** — *IEEE Access 2025* — Practical review of VLA models with deployment in mind. [`project`](https://vla-survey.github.io)
 - **[Human object interaction detection: Design and survey](https://doi.org/10.1016/j.imavis.2022.104617)** — *Image and Vision Computing 2023* — How vision finds the human, the object, and the action that links them.
-- **[Affordances in Robotic Tasks — A Survey](https://arxiv.org/abs/2004.07400)** — *arXiv 2020* — A broad survey of affordance in robotics: definitions, representations, and use.
+- **[Building Affordance Relations for Robotic Agents — A Review](https://doi.org/10.24963/ijcai.2021/590)** — *IJCAI 2021* — Published version of the authors' affordance survey: definitions, relations, and use.
 - **[Human-Robot Interaction: An Introduction](https://doi.org/10.1017/9781108676649)** — *Cambridge University Press 2020* — Plain-language textbook. The best background reading for newcomers to HRI.
 - **[A survey of robot learning from demonstration](https://doi.org/10.1016/j.robot.2008.10.024)** — *Robotics and Autonomous Systems 2009* — The classic framing of learning from demonstration. Still the cleanest introduction.
 
