@@ -8,7 +8,7 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-**86 papers** · **21 datasets** · **13 tools** · last updated 2026-11-20
+**86 papers** · **21 datasets** · **13 tools** · last updated 2026-11-21
 
 </div>
 
@@ -78,7 +78,16 @@ The object is always in the middle. That is what makes HORI different from plain
 
 Every entry looks like this:
 
-> - **[Paper title](link)** — *Venue Year* — one line on why it matters to you.
+> - **[Paper title](link)** — *Venue Year* — one line on why it matters. [`code`](link) [`project`](link)
+
+| Part | Meaning |
+| :--- | :--- |
+| **Title** | Opens a free version when one exists (usually arXiv). The label shows where it was published. |
+| ***Venue Year*** | Peer-reviewed venue and year. `arXiv YYYY` means it is still a preprint. |
+| **The sentence** | Why the paper matters, in plain English. |
+| **`code` / `project` / `video`** | Links from the authors, checked by hand. Not every paper has one. |
+
+**Order.** Inside each section, newer papers come first.
 
 **Reading paths.** You do not need to read everything. Pick the row that matches you.
 
@@ -97,17 +106,17 @@ Every entry looks like this:
 
 > **Takeaway:** Start with a survey. The field moves fast, but the problem definitions are stable: find the interaction, find the affordance, transfer the skill.
 
-- **[Affordances in Robotic Tasks — A Survey](https://arxiv.org/abs/2004.07400)** — *arXiv 2020* — A broad survey of affordance in robotics: definitions, representations, and use.
-- **[Human object interaction detection: Design and survey](https://doi.org/10.1016/j.imavis.2022.104617)** — *Image and Vision Computing 2023* — How vision finds the human, the object, and the action that links them.
-- **[Visual Affordance Prediction: Survey and Reproducibility](https://arxiv.org/abs/2505.05074)** — *arXiv 2025* — Recent survey that also checks whether published results can be reproduced.
-- **[From Human Videos to Robot Manipulation: A Survey on Scalable Vision-Language-Action Learning with Human-Centric Data](https://arxiv.org/abs/2606.00054)** — *arXiv 2026* — The 2026 map of turning everyday human video into robot training data.
+- **[From Human Videos to Robot Manipulation: A Survey on Scalable Vision-Language-Action Learning with Human-Centric Data](https://arxiv.org/abs/2606.00054)** — *IJCAI 2026* — The 2026 map of turning everyday human video into robot training data. [`code`](https://github.com/AaronFengZY/HumanCentricToVLA-Survey) [`project`](https://aaronfengzy.github.io/HumanCentricToVLA-Survey/)
 - **[Hand-Object Interaction in the Age of Large Foundation Models: Reconstruction, Generation, and Embodied Transfer](https://arxiv.org/abs/2607.28394)** — *arXiv 2026* — One place to see reconstruction, generation, and transfer of hand-object interaction.
-- **[Human-Robot Interaction: An Introduction](https://doi.org/10.1017/9781108676649)** — *2020* — Plain-language textbook. The best background reading for newcomers to HRI.
 - **[Learning Physical Interaction: A Survey of Tactile- and Force-aware Robot Learning](https://arxiv.org/abs/2608.07558)** — *arXiv 2026* — Why touch matters when objects are heavy, soft, or slippery.
-- **[Robotic Manipulation via Imitation Learning: Taxonomy, Evolution, Benchmark, and Challenges](https://arxiv.org/abs/2508.17449)** — *arXiv 2025* — Sorts imitation learning methods into a taxonomy you can actually navigate.
-- **[Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications](https://arxiv.org/abs/2510.07077)** — *arXiv 2025* — Practical review of VLA models with deployment in mind.
-- **[From Egocentric Human Video to Robot Manipulation in the Era of Embodied Intelligence](https://arxiv.org/abs/2611.13610)** — *arXiv 2026* — Focuses on first-person human video as the main data source for robots.
+- **[From Egocentric Human Video to Robot Manipulation in the Era of Embodied Intelligence](https://arxiv.org/abs/2611.13610)** — *arXiv 2026* — Focuses on first-person human video as the main data source for robots. [`project`](https://mikewu597.github.io/Ego2Robot_Learning/)
 - **[Vision-Language Models for Egocentric Video: From Hand-Object Interaction to Embodied AI](https://arxiv.org/abs/2608.18671)** — *arXiv 2026* — How vision-language models read first-person video, and why robots benefit.
+- **[Visual Affordance Prediction: Survey and Reproducibility](https://arxiv.org/abs/2505.05074)** — *arXiv 2025* — Recent survey that also checks whether published results can be reproduced. [`code`](https://github.com/apicis/aff-survey) [`project`](https://apicis.github.io/aff-survey/)
+- **[Robotic Manipulation via Imitation Learning: Taxonomy, Evolution, Benchmark, and Challenges](https://arxiv.org/abs/2508.17449)** — *arXiv 2025* — Sorts imitation learning methods into a taxonomy you can actually navigate.
+- **[Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications](https://arxiv.org/abs/2510.07077)** — *IEEE Access 2025* — Practical review of VLA models with deployment in mind. [`project`](https://vla-survey.github.io)
+- **[Human object interaction detection: Design and survey](https://doi.org/10.1016/j.imavis.2022.104617)** — *Image and Vision Computing 2023* — How vision finds the human, the object, and the action that links them.
+- **[Affordances in Robotic Tasks — A Survey](https://arxiv.org/abs/2004.07400)** — *arXiv 2020* — A broad survey of affordance in robotics: definitions, representations, and use.
+- **[Human-Robot Interaction: An Introduction](https://doi.org/10.1017/9781108676649)** — *Cambridge University Press 2020* — Plain-language textbook. The best background reading for newcomers to HRI.
 - **[A survey of robot learning from demonstration](https://doi.org/10.1016/j.robot.2008.10.024)** — *Robotics and Autonomous Systems 2009* — The classic framing of learning from demonstration. Still the cleanest introduction.
 
 ---
@@ -116,15 +125,15 @@ Every entry looks like this:
 
 > **Takeaway:** Before a robot can act, something must turn pixels into "this hand is holding this part of this object". HOI detection gives labels; hand-object reconstruction gives 3D geometry. Robotics needs the second one.
 
-- **[QPIC: Query-Based Pairwise Human-Object Interaction Detection with Image-Wide Contextual Information](https://arxiv.org/abs/2103.05399)** — *arXiv 2021* — Pairwise queries with image-wide context. A standard HOI baseline.
-- **[HOTR: End-to-End Human-Object Interaction Detection with Transformers](https://arxiv.org/abs/2104.13682)** — *arXiv 2021* — Set prediction for HOI, so no hand-written post-processing is needed.
-- **[Understanding Human Hands in Contact at Internet Scale](https://arxiv.org/abs/2006.06669)** — *arXiv 2020* — Defines the 100DOH benchmark: where and how hands touch objects.
-- **[Learning joint reconstruction of hands and manipulated objects](https://arxiv.org/abs/1904.05767)** — *arXiv 2019* — Recovers hand pose and object shape together. Core for reasoning about contact.
 - **[Egocentric Action Recognition with Objects and Vision-Language Affordances](https://arxiv.org/abs/2611.07673)** — *arXiv 2026* — Adds affordance reasoning to first-person action recognition.
-- **[MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances](https://arxiv.org/abs/2610.12416)** — *arXiv 2026* — Splits HOI into scene context and affordance parts, then recombines them.
+- **[MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances](https://arxiv.org/abs/2610.12416)** — *arXiv 2026* — Splits HOI into scene context and affordance parts, then recombines them. [`code`](https://github.com/LeiMingyuan/MAMHOI) [`project`](https://leimingyuan.github.io/MAMHOI-project-page/)
 - **[Grasping the Future: Joint 3D Hand-Object Forecasting From Internet Videos](https://arxiv.org/abs/2611.12879)** — *arXiv 2026* — Predicts future hand and object states from ordinary web videos.
-- **[HOI-Retarget: Contact-Centric Retargeting for Human-Object Interaction](https://arxiv.org/abs/2609.34674)** — *arXiv 2026* — Retargets human-object contact to a robot instead of copying joint angles.
-- **[Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions](https://arxiv.org/abs/2609.16683)** — *arXiv 2026* — Whole-body tasks where walking and handling an object must be learned together.
+- **[HOI-Retarget: Contact-Centric Retargeting for Human-Object Interaction](https://arxiv.org/abs/2609.34674)** — *arXiv 2026* — Retargets human-object contact to a robot instead of copying joint angles. [`code`](https://github.com/leggedrobotics/hoi-retarget) [`project`](http://shinben0327.github.io/hoi-retarget) [`video`](https://www.youtube.com/watch?v=7J-2QV3piIk)
+- **[Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions](https://arxiv.org/abs/2609.16683)** — *arXiv 2026* — Whole-body tasks where walking and handling an object must be learned together. [`code`](https://github.com/xiaohu-art/Weave) [`project`](https://xiaohu-art.github.io/Weave/)
+- **[QPIC: Query-Based Pairwise Human-Object Interaction Detection with Image-Wide Contextual Information](https://arxiv.org/abs/2103.05399)** — *CVPR 2021* — Pairwise queries with image-wide context. A standard HOI baseline.
+- **[HOTR: End-to-End Human-Object Interaction Detection with Transformers](https://arxiv.org/abs/2104.13682)** — *CVPR 2021* — Set prediction for HOI, so no hand-written post-processing is needed.
+- **[Understanding Human Hands in Contact at Internet Scale](https://arxiv.org/abs/2006.06669)** — *CVPR 2020* — Defines the 100DOH benchmark: where and how hands touch objects.
+- **[Learning joint reconstruction of hands and manipulated objects](https://arxiv.org/abs/1904.05767)** — *CVPR 2019* — Recovers hand pose and object shape together. Core for reasoning about contact.
 
 ---
 
@@ -132,22 +141,22 @@ Every entry looks like this:
 
 > **Takeaway:** An affordance is not a label, it is a *relation* between a body and an object. A handle affords pulling for a hand and for a hook-shaped gripper, but not for a suction cup. Most failures in this area come from ignoring the body.
 
-- **[AffordanceNet: An End-to-End Deep Learning Approach for Object Affordance Detection](https://arxiv.org/abs/1709.07326)** — *arXiv 2017* — Pixel-level affordance maps with object masks. The standard 2D baseline.
-- **[3D AffordanceNet: A Benchmark for Visual Object Affordance Understanding](https://arxiv.org/abs/2103.16397)** — *arXiv 2021* — Benchmark plus baseline for affordance on 3D point clouds.
-- **[Where2Act: From Pixels to Actions for Articulated 3D Objects](https://arxiv.org/abs/2101.02692)** — *arXiv 2021* — Learns where to push or pull on a 3D object, then acts there.
-- **[VAT-Mart: Learning Visual Action Trajectory Proposals for Manipulating 3D Articulated Objects](https://arxiv.org/abs/2106.14440)** — *arXiv 2021* — Builds value maps over affordance space and closes the loop on real objects.
-- **[Robo-ABC: Affordance Generalization Beyond Categories via Semantic Correspondence for Robot Manipulation](https://arxiv.org/abs/2405.19277)** — *arXiv 2024* — Transfers 'where a human hand touches' to 'where a robot should touch'.
-- **[RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation](https://arxiv.org/abs/2407.04689)** — *arXiv 2024* — Zero-shot manipulation by retrieving similar human-object contacts.
-- **[AffordanceLLM: Grounding Affordance from Vision Language Models](https://arxiv.org/abs/2401.06341)** — *arXiv 2024* — Uses world knowledge inside a VLM to locate affordance regions.
-- **[Grounding 3D Object Affordance from 2D Interactions in Images](https://arxiv.org/abs/2303.10437)** — *arXiv 2023* — Learns 3D affordance from cheap 2D human-object images.
-- **[LASO: Language-Guided Affordance Segmentation on 3D Object](https://doi.org/10.1109/cvpr52733.2024.01351)** — *CVPR 2024* — Language-guided 3D affordance segmentation. Useful for instruction-driven tasks.
-- **[SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes](https://doi.org/10.1109/cvpr52733.2024.01377)** — *CVPR 2024* — Affordance in full 3D scenes, not on single isolated objects.
-- **[ART: Bridging the Embodiment Gap in 3D Human-to-Robot Affordance Transfer](https://arxiv.org/abs/2611.24182)** — *arXiv 2026* — Handles the gap between a human hand and a robot gripper.
+- **[ART: Bridging the Embodiment Gap in 3D Human-to-Robot Affordance Transfer](https://arxiv.org/abs/2611.24182)** — *arXiv 2026* — Handles the gap between a human hand and a robot gripper. [`project`](https://derek0907.github.io/ART/)
 - **[Cross-Embodiment Affordance Transfer for Robotic Manipulation](https://arxiv.org/abs/2610.18194)** — *arXiv 2026* — Makes one affordance model work across different robot bodies.
 - **[Part Grounding, Not Action Knowledge: Locating the Bottleneck in VLM Affordance Prediction](https://arxiv.org/abs/2609.13225)** — *arXiv 2026* — Careful analysis: the hard part is finding the part, not knowing the action.
 - **[BridgeACT: Bridging Human Demonstrations to Robot Actions via Unified Tool-Target Affordances](https://arxiv.org/abs/2604.23249)** — *arXiv 2026* — Represents tool and target together so human demos become robot actions.
-- **[Learning Granularity-Aware Affordances from Human-Object Interaction for Tool-Based Functional Dexterous Grasping](https://arxiv.org/abs/2407.00614)** — *arXiv 2024* — Tool use needs grasps chosen for the tool's function, not just stability.
 - **[AffordSim: A Scalable Data Generator and Benchmark for Affordance-Aware Robotic Manipulation](https://arxiv.org/abs/2604.11674)** — *arXiv 2026* — Generates affordance training data at scale, with a benchmark to compare on.
+- **[Learning Granularity-Aware Affordances from Human-Object Interaction for Tool-Based Functional Dexterous Grasping](https://arxiv.org/abs/2407.00614)** — *TNNLS 2025* — Tool use needs grasps chosen for the tool's function, not just stability. [`code`](https://github.com/yangfan293/GAAF-DEX)
+- **[Robo-ABC: Affordance Generalization Beyond Categories via Semantic Correspondence for Robot Manipulation](https://arxiv.org/abs/2405.19277)** — *ECCV 2024* — Transfers 'where a human hand touches' to 'where a robot should touch'. [`code`](https://github.com/TEA-Lab/Robo-ABC)
+- **[RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation](https://arxiv.org/abs/2407.04689)** — *CoRL 2024* — Zero-shot manipulation by retrieving similar human-object contacts.
+- **[AffordanceLLM: Grounding Affordance from Vision Language Models](https://arxiv.org/abs/2401.06341)** — *CVPR 2024* — Uses world knowledge inside a VLM to locate affordance regions. [`code`](https://github.com/JasonQSY/AffordanceLLM)
+- **[LASO: Language-Guided Affordance Segmentation on 3D Object](https://doi.org/10.1109/cvpr52733.2024.01351)** — *CVPR 2024* — Language-guided 3D affordance segmentation. Useful for instruction-driven tasks.
+- **[SceneFun3D: Fine-Grained Functionality and Affordance Understanding in 3D Scenes](https://doi.org/10.1109/cvpr52733.2024.01377)** — *CVPR 2024* — Affordance in full 3D scenes, not on single isolated objects.
+- **[Grounding 3D Object Affordance from 2D Interactions in Images](https://arxiv.org/abs/2303.10437)** — *ICCV 2023* — Learns 3D affordance from cheap 2D human-object images.
+- **[VAT-Mart: Learning Visual Action Trajectory Proposals for Manipulating 3D Articulated Objects](https://arxiv.org/abs/2106.14440)** — *ICLR 2022* — Builds value maps over affordance space and closes the loop on real objects. [`code`](https://github.com/warshallrho/VAT-Mart)
+- **[3D AffordanceNet: A Benchmark for Visual Object Affordance Understanding](https://arxiv.org/abs/2103.16397)** — *CVPR 2021* — Benchmark plus baseline for affordance on 3D point clouds.
+- **[Where2Act: From Pixels to Actions for Articulated 3D Objects](https://arxiv.org/abs/2101.02692)** — *ICCV 2021* — Learns where to push or pull on a 3D object, then acts there. [`code`](https://github.com/daerduoCarey/where2act)
+- **[AffordanceNet: An End-to-End Deep Learning Approach for Object Affordance Detection](https://arxiv.org/abs/1709.07326)** — *ICRA 2018* — Pixel-level affordance maps with object masks. The standard 2D baseline. [`code`](https://github.com/nqanh/affordance-net)
 
 ---
 
@@ -155,20 +164,20 @@ Every entry looks like this:
 
 > **Takeaway:** The hard part is not recording a human. It is deciding *what to keep*: hand trajectory? contact point? object pose? Most 2025-2026 work argues that contact and relative object motion transfer better than joint angles.
 
-- **[EgoMimic: Scaling Imitation Learning via Egocentric Video](https://arxiv.org/abs/2410.24221)** — *arXiv 2024* — One egocentric human stream plus robot data gives strong scaling results.
-- **[DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies](https://arxiv.org/abs/2505.07813)** — *arXiv 2025* — Turns in-the-wild human hand data into dexterous robot policies.
-- **[HumanPlus: Humanoid Shadowing and Imitation from Humans](https://arxiv.org/abs/2406.10454)** — *arXiv 2024* — A full human-to-humanoid pipeline: hardware, data, and policy.
-- **[R3M: A Universal Visual Representation for Robot Manipulation](https://arxiv.org/abs/2203.12601)** — *arXiv 2022* — Pretrained visual representations that transfer well to manipulation.
-- **[HOC2R: Hand-Object Contact Trajectories for Human-to-Robot Motion Transfer](https://arxiv.org/abs/2611.08920)** — *arXiv 2026* — Uses hand-object contact tracks as the transferable part of a demonstration.
-- **[DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning](https://arxiv.org/abs/2611.14092)** — *arXiv 2026* — Expands one human grasp into many robot demonstrations.
+- **[HOC2R: Hand-Object Contact Trajectories for Human-to-Robot Motion Transfer](https://arxiv.org/abs/2611.08920)** — *ACRA 2026* — Uses hand-object contact tracks as the transferable part of a demonstration.
+- **[DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning](https://arxiv.org/abs/2611.14092)** — *arXiv 2026* — Expands one human grasp into many robot demonstrations. [`code`](https://github.com/robbyant-research/DexSeed) [`project`](https://robbyant-research.github.io/DexSeed/)
 - **[DexHOT: Learning Hand-Object Configuration Transfer for Dexterous Manipulation](https://arxiv.org/abs/2611.05119)** — *arXiv 2026* — Transfers relative hand-object configuration, not absolute poses.
-- **[Do as I Do: Dexterous Manipulation Data from Everyday Human Videos](https://arxiv.org/abs/2606.19333)** — *arXiv 2026* — Shows everyday videos can be mined for dexterous data.
-- **[Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video](https://arxiv.org/abs/2606.08828)** — *arXiv 2026* — A single human video becomes a real dexterous skill, via simulation.
+- **[Do as I Do: Dexterous Manipulation Data from Everyday Human Videos](https://arxiv.org/abs/2606.19333)** — *CoRL 2026* — Shows everyday videos can be mined for dexterous data. [`code`](https://github.com/malik-group/do-as-i-do) [`project`](https://do-as-i-do.com/)
+- **[Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video](https://arxiv.org/abs/2606.08828)** — *arXiv 2026* — A single human video becomes a real dexterous skill, via simulation. [`code`](https://github.com/video2sim2real/video2sim2real) [`project`](https://video2sim2real.github.io/)
 - **[Ego2Contact: Predicting Touch from Egocentric Human Video for Contact-Rich Robot Manipulation](https://arxiv.org/abs/2610.22932)** — *arXiv 2026* — Predicts when and where contact happens, using only first-person video.
 - **[Cross-Embodiment Causal Transfer from Human Videos to Robot Manipulation](https://arxiv.org/abs/2610.21798)** — *arXiv 2026* — Asks which parts of a human demo actually cause success on a robot.
-- **[OmniHOI: Dexterous Hand-Object Interaction from Monocular Human Video](https://arxiv.org/abs/2610.10855)** — *arXiv 2026* — Dexterous hand-object interaction from a single ordinary camera.
+- **[OmniHOI: Dexterous Hand-Object Interaction from Monocular Human Video](https://arxiv.org/abs/2610.10855)** — *arXiv 2026* — Dexterous hand-object interaction from a single ordinary camera. [`project`](https://hydrofoooil.github.io/OmniHOI/)
 - **[EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos](https://arxiv.org/abs/2610.18822)** — *arXiv 2026* — Turns ego video into demonstrations that stay physically valid for a robot.
 - **[SAKI: Skill Assembly and Kinematic Imitation from Human Videos for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2609.36031)** — *arXiv 2026* — Long tasks: split a human video into skills, then replay them on a mobile robot.
+- **[EgoMimic: Scaling Imitation Learning via Egocentric Video](https://arxiv.org/abs/2410.24221)** — *ICRA 2025* — One egocentric human stream plus robot data gives strong scaling results. [`code`](https://github.com/SimarKareer/EgoMimic)
+- **[DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies](https://arxiv.org/abs/2505.07813)** — *RSS 2025* — Turns in-the-wild human hand data into dexterous robot policies. [`code`](https://github.com/dexwild/dexwild) [`project`](https://dexwild.github.io) [`video`](https://www.youtube.com/watch?v=oMaamSkcl5E)
+- **[HumanPlus: Humanoid Shadowing and Imitation from Humans](https://arxiv.org/abs/2406.10454)** — *CoRL 2024* — A full human-to-humanoid pipeline: hardware, data, and policy. [`code`](https://github.com/MarkFzp/humanplus) [`project`](https://humanoid-ai.github.io/) [`video`](https://www.youtube.com/watch?v=6r4ZxpJjdx8)
+- **[R3M: A Universal Visual Representation for Robot Manipulation](https://arxiv.org/abs/2203.12601)** — *CoRL 2022* — Pretrained visual representations that transfer well to manipulation. [`code`](https://github.com/facebookresearch/r3m)
 
 ---
 
@@ -176,21 +185,21 @@ Every entry looks like this:
 
 > **Takeaway:** Two families dominate. **End-to-end policies** (VLA, diffusion policy) map pixels to actions and scale with data. **Structured planners** (affordance maps, code-as-policies, TAMP) are interpretable and need less data. Most real systems mix both.
 
-- **[RT-1: Robotics Transformer for Real-World Control at Scale](https://arxiv.org/abs/2212.06817)** — *arXiv 2022* — Shows a transformer can act across many real tasks from images.
-- **[RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](https://arxiv.org/abs/2307.15818)** — *arXiv 2023* — Vision-language pretraining transfers to robot actions.
-- **[Open X-Embodiment: Robotic Learning Datasets and RT-X Models](https://arxiv.org/abs/2310.08864)** — *arXiv 2023* — Many labs pool robot data; cross-robot transfer becomes possible.
-- **[Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213)** — *arXiv 2024* — An open, reusable generalist policy you can fine-tune yourself.
-- **[OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)** — *arXiv 2024* — Open weights for a VLA. Good starting point for your own experiments.
-- **[π0: A Vision-Language-Action Flow Model for General Robot Control](https://arxiv.org/abs/2410.24164)** — *arXiv 2024* — Flow matching inside a VLA for smoother, faster action generation.
-- **[Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](https://arxiv.org/abs/2304.13705)** — *arXiv 2023* — ALOHA + ACT. Cheap hardware made bimanual imitation practical.
-- **[Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137)** — *arXiv 2023* — Treats action sequences as a diffusion problem. Strong and simple baseline.
-- **[CLIPort: What and Where Pathways for Robotic Manipulation](https://arxiv.org/abs/2109.12098)** — *arXiv 2021* — Combines 'what' semantics with 'where' geometry for tabletop tasks.
-- **[Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation](https://arxiv.org/abs/2209.05451)** — *arXiv 2022* — One policy over many tasks with voxel observations and language goals.
-- **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** — *arXiv 2023* — Language models write 3D value maps, then a planner acts on them.
-- **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** — *arXiv 2022* — LLM plans constrained by what the robot can actually do (SayCan).
-- **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** — *arXiv 2022* — LLMs write control code instead of emitting raw actions.
-- **[VIMA: General Robot Manipulation with Multimodal Prompts](https://arxiv.org/abs/2210.03094)** — *arXiv 2022* — One model follows text plus image prompts for many manipulation tasks.
-- **[3D Diffuser Actor: Policy Diffusion with 3D Scene Representations](https://arxiv.org/abs/2402.10885)** — *arXiv 2024* — Diffusion policy with 3D scene features improves spatial precision.
+- **[π0: A Vision-Language-Action Flow Model for General Robot Control](https://arxiv.org/abs/2410.24164)** — *RSS 2025* — Flow matching inside a VLA for smoother, faster action generation. [`project`](https://physicalintelligence.company/blog/pi0)
+- **[Open X-Embodiment: Robotic Learning Datasets and RT-X Models](https://arxiv.org/abs/2310.08864)** — *ICRA 2024* — Many labs pool robot data; cross-robot transfer becomes possible. [`code`](https://github.com/google-deepmind/open_x_embodiment) [`project`](https://robotics-transformer-x.github.io)
+- **[Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213)** — *RSS 2024* — An open, reusable generalist policy you can fine-tune yourself. [`code`](https://github.com/octo-models/octo) [`project`](https://octo-models.github.io) [`video`](https://www.youtube.com/watch?v=99667VDGWMg)
+- **[OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)** — *CoRL 2024* — Open weights for a VLA. Good starting point for your own experiments. [`code`](https://github.com/openvla/openvla) [`project`](https://openvla.github.io/) [`video`](https://www.youtube.com/watch?v=SIcPxapIgBI)
+- **[3D Diffuser Actor: Policy Diffusion with 3D Scene Representations](https://arxiv.org/abs/2402.10885)** — *CoRL 2024* — Diffusion policy with 3D scene features improves spatial precision.
+- **[RT-1: Robotics Transformer for Real-World Control at Scale](https://arxiv.org/abs/2212.06817)** — *RSS 2023* — Shows a transformer can act across many real tasks from images.
+- **[RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](https://arxiv.org/abs/2307.15818)** — *CoRL 2023* — Vision-language pretraining transfers to robot actions. [`project`](https://robotics-transformer.github.io/)
+- **[Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](https://arxiv.org/abs/2304.13705)** — *RSS 2023* — ALOHA + ACT. Cheap hardware made bimanual imitation practical. [`code`](https://github.com/tonyzhaozh/act)
+- **[Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137)** — *RSS 2023* — Treats action sequences as a diffusion problem. Strong and simple baseline. [`code`](https://github.com/real-stanford/diffusion_policy)
+- **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** — *CoRL 2023* — Language models write 3D value maps, then a planner acts on them. [`code`](https://github.com/huangwl18/VoxPoser)
+- **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** — *ICRA 2023* — LLMs write control code instead of emitting raw actions.
+- **[VIMA: General Robot Manipulation with Multimodal Prompts](https://arxiv.org/abs/2210.03094)** — *ICML 2023* — One model follows text plus image prompts for many manipulation tasks. [`code`](https://github.com/vimalabs/VIMA) [`project`](https://vimalabs.github.io/)
+- **[Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation](https://arxiv.org/abs/2209.05451)** — *CoRL 2022* — One policy over many tasks with voxel observations and language goals. [`code`](https://github.com/peract/peract) [`project`](https://peract.github.io/) [`video`](https://www.youtube.com/watch?v=TB0g52N-3_Y)
+- **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** — *CoRL 2022* — LLM plans constrained by what the robot can actually do (SayCan). [`project`](https://say-can.github.io/) [`video`](https://www.youtube.com/watch?v=ysFav0b472w)
+- **[CLIPort: What and Where Pathways for Robotic Manipulation](https://arxiv.org/abs/2109.12098)** — *CoRL 2021* — Combines 'what' semantics with 'where' geometry for tabletop tasks. [`code`](https://github.com/cliport/cliport) [`project`](https://cliport.github.io/) [`video`](https://www.youtube.com/watch?v=UdzoagBgWTA)
 
 ---
 
@@ -198,12 +207,12 @@ Every entry looks like this:
 
 > **Takeaway:** A stable grasp is not the same as a *useful* grasp. For tool use, the grasp must leave the functional part free. That is why affordance and grasping are now studied together.
 
+- **[UniDexGrasp: Universal Robotic Dexterous Grasping via Learning Diverse Proposal Generation and Goal-Conditioned Policy](https://arxiv.org/abs/2303.00938)** — *CVPR 2023* — Proposes grasps first, then learns a policy to reach them. [`code`](https://github.com/PKU-EPIC/UniDexGrasp)
+- **[AnyGrasp: Robust and Efficient Grasp Perception in Spatial and Temporal Domains](https://arxiv.org/abs/2212.08333)** — *T-RO 2023* — Grasp detection that runs fast enough for real robot loops. [`code`](https://github.com/graspnet/anygrasp_sdk) [`project`](https://graspnet.net/anygrasp.html) [`video`](https://www.youtube.com/watch?v=2O7UoOxeLlk)
+- **[Contact-GraspNet: Efficient 6-DoF Grasp Generation in Cluttered Scenes](https://arxiv.org/abs/2103.14127)** — *ICRA 2021* — Predicts contact points directly, which works well in clutter. [`code`](https://github.com/NVlabs/contact_graspnet) [`project`](https://research.nvidia.com/publication/2021-03_Contact-GraspNet%3A--Efficient) [`video`](https://www.youtube.com/watch?v=qRLKYSLXElM)
+- **[GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping](https://doi.org/10.1109/cvpr42600.2020.01146)** — *CVPR 2020* — Large benchmark for 6-DoF grasping on real depth data. [`code`](https://github.com/graspnet/graspnet-baseline)
+- **[DexPilot: Vision Based Teleoperation of Dexterous Robotic Hand-Arm System](https://arxiv.org/abs/1910.03135)** — *ICRA 2020* — Human hand motion becomes dexterous robot control, with no gloves.
 - **[Learning Dexterous In-Hand Manipulation](https://arxiv.org/abs/1808.00177)** — *arXiv 2018* — Classic large-scale simulation-to-real in-hand manipulation result.
-- **[GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping](https://doi.org/10.1109/cvpr42600.2020.01146)** — *CVPR 2020* — Large benchmark for 6-DoF grasping on real depth data.
-- **[Contact-GraspNet: Efficient 6-DoF Grasp Generation in Cluttered Scenes](https://arxiv.org/abs/2103.14127)** — *arXiv 2021* — Predicts contact points directly, which works well in clutter.
-- **[UniDexGrasp: Universal Robotic Dexterous Grasping via Learning Diverse Proposal Generation and Goal-Conditioned Policy](https://arxiv.org/abs/2303.00938)** — *arXiv 2023* — Proposes grasps first, then learns a policy to reach them.
-- **[AnyGrasp: Robust and Efficient Grasp Perception in Spatial and Temporal Domains](https://arxiv.org/abs/2212.08333)** — *arXiv 2022* — Grasp detection that runs fast enough for real robot loops.
-- **[DexPilot: Vision Based Teleoperation of Dexterous Robotic Hand-Arm System](https://arxiv.org/abs/1910.03135)** — *arXiv 2019* — Human hand motion becomes dexterous robot control, with no gloves.
 
 ---
 
@@ -263,14 +272,14 @@ Every entry looks like this:
 
 > **Takeaway:** The object changes the social problem. Handing over a knife, taking a heavy box, or reaching into a shared shelf are all object problems and people problems at the same time. Timing and legibility matter as much as grasp success.
 
+- **[Bi-Handover: A Unified Vision-Based Paradigm for Reliable Bidirectional Human–Robot Object Handover](https://doi.org/10.1109/tase.2026.3685628)** — *T-ASE 2026* — Handles both giving and taking an object in one vision-based system.
+- **[Modeling Dynamic Hand-Object Interactions with Applications to Human-Robot Handovers](https://arxiv.org/abs/2503.04879)** — *arXiv 2025* — Bridges hand-object motion modeling with real handover control.
+- **[Human-to-Robot Handover Control of an Autonomous Mobile Robot Based on Hand-Masked Object Pose Estimation](https://doi.org/10.1109/lra.2024.3433205)** — *RA-L 2024* — A mobile robot takes an object from a person, using masked hand detection.
+- **[Survey on human–robot collaboration in industrial settings: Safety, intuitive interfaces and applications](https://doi.org/10.1016/j.mechatronics.2018.02.009)** — *Mechatronics 2018* — Wide survey of safety and interfaces in shared industrial workspaces.
+- **[Shared Autonomy via Deep Reinforcement Learning](https://arxiv.org/abs/1802.01744)** — *RSS 2018* — Robot and human share control, with the robot learning when to help.
+- **[Modeling human reaching phase in human-human object handover with application in robot-human handover](https://doi.org/10.1109/iros.2017.8206205)** — *IROS 2017* — Handover timing comes from human reaching behavior, not just grasp pose.
 - **[Legibility and predictability of robot motion](https://doi.org/10.1109/hri.2013.6483603)** — *HRI 2013* — People read robot motion as intent. This paper defines the terms.
 - **[Human-robot proxemics](https://doi.org/10.1145/1957656.1957786)** — *HRI 2011* — Distance and approach behavior shape how comfortable people feel.
-- **[Survey on human–robot collaboration in industrial settings: Safety, intuitive interfaces and applications](https://doi.org/10.1016/j.mechatronics.2018.02.009)** — *Mechatronics 2018* — Wide survey of safety and interfaces in shared industrial workspaces.
-- **[Modeling human reaching phase in human-human object handover with application in robot-human handover](https://doi.org/10.1109/iros.2017.8206205)** — *IROS 2017* — Handover timing comes from human reaching behavior, not just grasp pose.
-- **[Modeling Dynamic Hand-Object Interactions with Applications to Human-Robot Handovers](https://arxiv.org/abs/2503.04879)** — *arXiv 2025* — Bridges hand-object motion modeling with real handover control.
-- **[Bi-Handover: A Unified Vision-Based Paradigm for Reliable Bidirectional Human–Robot Object Handover](https://doi.org/10.1109/tase.2026.3685628)** — *T-ASE 2026* — Handles both giving and taking an object in one vision-based system.
-- **[Shared Autonomy via Deep Reinforcement Learning](https://arxiv.org/abs/1802.01744)** — *arXiv 2018* — Robot and human share control, with the robot learning when to help.
-- **[Human-to-Robot Handover Control of an Autonomous Mobile Robot Based on Hand-Masked Object Pose Estimation](https://doi.org/10.1109/lra.2024.3433205)** — *RA-L 2024* — A mobile robot takes an object from a person, using masked hand detection.
 
 ---
 
@@ -278,12 +287,12 @@ Every entry looks like this:
 
 > **Takeaway:** "The robot succeeded" is not enough. Did the person understand what it was doing? Did they trust it correctly? Did the interaction feel safe? These papers give you metrics you can borrow.
 
-- **[A Meta-Analysis of Vulnerability and Trust in Human–Robot Interaction](https://doi.org/10.1145/3658897)** — *THRI 2024* — Pools many studies to say what actually moves trust.
-- **[Survey of metrics for human-robot interaction](https://doi.org/10.1109/hri.2013.6483569)** — *HRI 2013* — A catalogue of HRI metrics, so you can pick one with a reason.
 - **[A Taxonomy of Mental Model Mismatches for Human–Robot Interaction](https://doi.org/10.1145/3846186)** — *THRI 2026* — Most failures come from mismatched expectations. This names the types.
+- **[A Meta-Analysis of Vulnerability and Trust in Human–Robot Interaction](https://doi.org/10.1145/3658897)** — *THRI 2024* — Pools many studies to say what actually moves trust.
+- **[Converging Measures and an Emergent Model: A Meta-Analysis of Human-Machine Trust Questionnaires](https://doi.org/10.1145/3677614)** — *THRI 2024* — Compares trust questionnaires so results become comparable across studies.
 - **[Metrics for Human-Robot Team Design: A Teamwork Perspective on Evaluation of Human-Robot Teams](https://doi.org/10.1145/3522581)** — *THRI 2022* — Evaluates the team, not only the robot. Useful for shared-task studies.
 - **[Improving Human-Robot Interaction Through Explainable Reinforcement Learning](https://doi.org/10.1109/hri.2019.8673198)** — *HRI 2019* — Explanations from an RL policy change how people judge the robot.
-- **[Converging Measures and an Emergent Model: A Meta-Analysis of Human-Machine Trust Questionnaires](https://doi.org/10.1145/3677614)** — *THRI 2024* — Compares trust questionnaires so results become comparable across studies.
+- **[Survey of metrics for human-robot interaction](https://doi.org/10.1109/hri.2013.6483569)** — *HRI 2013* — A catalogue of HRI metrics, so you can pick one with a reason.
 
 ---
 

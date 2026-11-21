@@ -20,7 +20,9 @@ If a paper is only loosely related (for example, general robot navigation), it p
    ```
 
 3. Open the link yourself and check that the title matches the page.
-4. Open a pull request. **One paper per pull request** is fine and gets reviewed faster.
+4. If the authors publish code, a project page, or a video, add it at the end of the line:
+   `[\`code\`](https://github.com/...)`  `[\`project\`](https://...)`  `[\`video\`](https://...)`
+5. Open a pull request. **One paper per pull request** is fine and gets reviewed faster.
 
 ## Writing rules
 
