@@ -7,6 +7,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Link check](https://github.com/Wataru823/Awesome-Human-Object-Robot-Interaction/actions/workflows/link-check.yml/badge.svg)](https://github.com/Wataru823/Awesome-Human-Object-Robot-Interaction/actions/workflows/link-check.yml)
 
 **90 papers** · **21 datasets** · **13 tools** · last updated 2026-11-21
 
